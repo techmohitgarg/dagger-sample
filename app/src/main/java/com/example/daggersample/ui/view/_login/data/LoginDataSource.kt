@@ -2,11 +2,12 @@ package com.example.daggersample.ui.view._login.data
 
 import com.example.daggersample.ui.view._login.data.model.LoggedInUser
 import java.io.IOException
+import javax.inject.Inject
 
 /**
  * Class that handles authentication w/ login credentials and retrieves user information.
  */
-class LoginDataSource {
+class LoginDataSource @Inject constructor() {
 
     fun login(username: String, password: String): Result<LoggedInUser> {
         try {

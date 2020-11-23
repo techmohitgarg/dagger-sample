@@ -1,4 +1,4 @@
-package com.example.daggersample.ui.view._lunch
+package com.example.daggersample.ui.view._launch
 
 import android.content.Intent
 import android.os.Bundle
@@ -18,7 +18,7 @@ class LaunchActivity : AppCompatActivity() {
             val mainIntent = Intent(this, LoginActivity::class.java)
             startActivity(mainIntent)
             finish()
-        }, 2000)
+        }, 1000)
 
     }
 }

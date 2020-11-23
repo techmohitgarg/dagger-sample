@@ -7,8 +7,9 @@ import android.util.Patterns
 import com.example.daggersample.R
 import com.example.daggersample.ui.view._login.data.LoginRepository
 import com.example.daggersample.ui.view._login.data.Result
+import javax.inject.Inject
 
-class LoginViewModel(private val loginRepository: LoginRepository) : ViewModel() {
+class LoginViewModel @Inject constructor(private val loginRepository: LoginRepository) {
 
     private val _loginForm = MutableLiveData<LoginFormState>()
     val loginFormState: LiveData<LoginFormState> = _loginForm
